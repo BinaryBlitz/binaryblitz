@@ -27,11 +27,11 @@
       </div>
     </div>
   </div>
-  <div class="container py-16 grid grid-cols-2">
+  <div class="container py-16 grid grid-cols-2 gap-x-16">
     <div class="flex flex-col gap-y-10">
       <h2 class="text-2xl font-semibold">About</h2>
 
-      <p>{{ $frontmatter.description }}</p>
+      <p>{{ $frontmatter.about }}</p>
     </div>
     <div class="flex items-center justify-center gap-x-8">
       <img :src="screenshot" alt="FITMOST screenshot iPhone" class="shadow-lg rounded"

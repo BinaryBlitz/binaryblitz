@@ -11,7 +11,7 @@
           <p class="text-lg font-semibold">Universal fitness pass</p>
         </div>
       </router-link>
-      <router-link to="/projects/fitmost" class="bg-cover p-12 flex flex-col justify-between items-start gap-y-20"
+      <router-link to="/projects/chisto" class="bg-cover p-12 flex flex-col justify-between items-start gap-y-20"
         style="background-image: url('/images/works-bg3.jpg')">
         <img alt="" src="@/assets/images/works-logo3.png" class="h-12">
 
