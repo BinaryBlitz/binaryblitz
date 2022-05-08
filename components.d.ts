@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     CommunityIcon: typeof import('./src/components/icons/CommunityIcon.vue')['default']
+    DefaultLayout: typeof import('./src/layouts/default.vue')['default']
     DocumentationIcon: typeof import('./src/components/icons/DocumentationIcon.vue')['default']
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']

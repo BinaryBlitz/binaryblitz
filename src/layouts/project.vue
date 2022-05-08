@@ -1,22 +1,4 @@
-<page>
-background_color: "#A19AAA"
-name: FITMOST
-category: Mobile app
-summary: Universal fitness pass
-logo_src: "/images/projects/fitmost/logo.png"
-app_store_url: "https://itunes.apple.com/us/app/fitmost/id1282198170?mt=8"
-google_play_url: "https://play.google.com/store/apps/details?id=ru.binaryblitz.fitmost"
-screenshot_src: "/images/projects/fitmost/fitmost-iphone.png"
-description: Universal fitness pass
-screenshots:
-  - "/images/projects/fitmost/fitmost-screen-01.png"
-  - "/images/projects/fitmost/fitmost-screen-02.png"
-technologies:
-  - swift
-  - kotlin
-</page>
-
-<template>
+<template layout="default">
   <div :style="`background-color: ${$frontmatter.background_color}`">
     <div class="container py-12 text-white grid grid-cols-2">
       <div>
@@ -60,20 +42,7 @@ technologies:
     <div class="container py-16 grid md:grid-cols-3 gap-10">
       <Technology name="swift" />
       <Technology name="kotlin" />
-
-      <!-- <div class="flex flex-col gap-y-8 items-start">
-        <img src="@/assets/images/technologies/swift.png" alt="Swift" class="max-h-20">
-        <h3 class="text-lg font-semibold">Swift</h3>
-        <p>General-purpose programming language built using a modern approach to safety, performance, and software
-          design
-          patterns.</p>
-      </div>
-      <div class="flex flex-col gap-y-8 items-start">
-        <img src="@/assets/images/technologies/kotlin.png" alt="Swift" class="max-h-20">
-        <h3 class="text-lg font-semibold">Kotlin</h3>
-        <p>Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and
-          Android.</p>
-      </div> -->
     </div>
   </div>
+  <slot />
 </template>
