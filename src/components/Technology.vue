@@ -24,6 +24,12 @@ const TECHNOLOGIES = [
     logo_src: '/images/technologies/kotlin.png',
     description: 'Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and Android.'
   },
+  {
+    id: 'rails',
+    name: 'Ruby on Rails',
+    logo_src: '/images/technologies/rails.png',
+    description: 'Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.'
+  },
 ]
 
 export default {
