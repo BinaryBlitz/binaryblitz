@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto py-8 flex justify-between">
     <div class="flex flex-row items-center gap-x-12">
-      <a href="/">
+      <router-link to="/">
         <img src="@/assets/images/logo.png" alt="Binary Blitz logo">
-      </a>
+      </router-link>
       <ul class="flex gap-8">
         <li>Projects</li>
         <li>Careers</li>
