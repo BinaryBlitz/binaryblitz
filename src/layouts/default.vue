@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <header>
     <div>
       <HelloWorld :msg="$frontmatter.title" />
