@@ -4,7 +4,7 @@
 
       <router-link to="/projects/fitmost" class="bg-cover p-12 flex flex-col justify-between items-start gap-y-20"
         style="background-image: url('/images/works-bg0.jpg')">
-        <img alt="" src="@/assets/images/projects/fitmost/logo-round.png" class="h-12">
+        <img alt="" src="/images/projects/fitmost/logo-round.png" class="h-12">
 
         <div class="font-medium text-white">
           <p class="text-sm">Mobile app</p>
