@@ -7,6 +7,7 @@ declare module 'vue' {
     CommunityIcon: typeof import('./src/components/icons/CommunityIcon.vue')['default']
     DocumentationIcon: typeof import('./src/components/icons/DocumentationIcon.vue')['default']
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
+    Footer: typeof import('./src/components/Footer.vue')['default']
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']

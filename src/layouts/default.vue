@@ -2,6 +2,8 @@
   <Header />
 
   <slot />
+
+  <Footer />
 </template>
 
 <style>
