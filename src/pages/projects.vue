@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50">
-    <div class="container mx-auto py-12 grid grid-cols-2">
+    <div class="container py-12 grid grid-cols-2">
 
       <a href="#" class="bg-cover p-12 flex flex-col justify-between items-start gap-y-20"
         style="background-image: url('/images/works-bg0.jpg')">

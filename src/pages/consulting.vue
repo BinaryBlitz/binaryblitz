@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100">
-    <div class="container mx-auto flex flex-col gap-y-8 py-12">
+    <div class="container flex flex-col gap-y-8 py-12">
       <h2 class="text-2xl font-medium">Increase conversion rate of your app or website</h2>
 
       <p>

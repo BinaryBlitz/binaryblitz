@@ -4,7 +4,7 @@ title: You did it!
 
 <template>
   <div class="bg-gray-50">
-    <div class="container mx-auto">
+    <div class="container">
 
       <section class="py-12 grid grid-cols-12 gap-x-16">
         <div class="col-span-6 flex flex-col gap-y-8 justify-center mb-16">

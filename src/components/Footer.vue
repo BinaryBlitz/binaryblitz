@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50">
-    <div class="container mx-auto flex justify-between text-sm py-16">
+    <div class="container flex justify-between text-sm py-16">
       <span>&copy; Binary Blitz 2022</span>
       <span class="flex items-center">
         <i class="icon-location mr-2"></i>

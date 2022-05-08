@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-8 flex justify-between items-center">
+  <div class="container py-8 flex justify-between items-center">
     <div class="flex flex-row items-center gap-x-12">
       <router-link to="/">
         <img src="@/assets/images/logo.png" alt="Binary Blitz logo">
