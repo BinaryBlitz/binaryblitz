@@ -16,7 +16,7 @@
 </template>
 
 <style>
-@import '~/assets/base.css';
+@import '~/assets/main.css';
 
 #app {
   max-width: 1280px;
