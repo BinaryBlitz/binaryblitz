@@ -8,9 +8,9 @@
 
         <img alt="" :src="$frontmatter.logo_src" class="block h-16 mb-12">
 
-        <h1 class="mb-8 text-2xl font-semibold">{{ $frontmatter.name }}</h1>
+        <h1 class="mb-8 text-2xl font-semibold">{{ $frontmatter.headline }}</h1>
 
-        <p class="text-lg mb-8">Universal fitness pass</p>
+        <p class="text-lg mb-8">{{ $frontmatter.summary }}</p>
 
         <div class="flex items-center gap-x-2">
           <a :href="$frontmatter.app_store_url" target="_blank" v-if="$frontmatter.app_store_url">
