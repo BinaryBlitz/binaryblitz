@@ -40,8 +40,7 @@
   </div>
   <div class="bg-gray-50">
     <div class="container py-16 grid md:grid-cols-3 gap-10">
-      <Technology name="swift" />
-      <Technology name="kotlin" />
+      <Technology :name="technology" v-for="technology in $frontmatter.technologies" />
     </div>
   </div>
   <slot />
