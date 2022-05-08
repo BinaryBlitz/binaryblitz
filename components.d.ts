@@ -10,7 +10,6 @@ declare module 'vue' {
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    Island: typeof import('./node_modules/.pnpm/iles@0.7.38/node_modules/iles/dist/client/app/components/Island.vue')['default']
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']
     ToolingIcon: typeof import('./src/components/icons/ToolingIcon.vue')['default']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
