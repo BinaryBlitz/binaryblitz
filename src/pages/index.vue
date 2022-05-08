@@ -3,7 +3,7 @@ title: You did it!
 </page>
 
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-50">
     <div class="container mx-auto">
 
       <section class="py-12 grid grid-cols-12 gap-x-16">

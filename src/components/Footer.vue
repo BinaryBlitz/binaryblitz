@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-50">
     <div class="container mx-auto flex justify-between text-sm py-16">
       <span>&copy; Binary Blitz 2022</span>
       <span class="flex items-center">

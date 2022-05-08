@@ -5,7 +5,9 @@
 @import 'tailwindcss/utilities';
 
 .button {
-  @apply inline-block align-middle px-4 py-2 bg-transparent border border-gray-900 rounded-full uppercase text-xs tracking-tight;
+  @apply inline-block align-middle px-4 py-2
+    bg-transparent border border-gray-900
+    rounded-full uppercase text-xs font-medium tracking-tight;
 
   &:hover {
     @apply bg-gray-900 text-white;
