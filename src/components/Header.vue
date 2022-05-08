@@ -5,9 +5,15 @@
         <img src="@/assets/images/logo.png" alt="Binary Blitz logo">
       </router-link>
       <ul class="flex gap-8 font-medium">
-        <li>Projects</li>
-        <li>Careers</li>
-        <li>Consulting</li>
+        <li>
+          <router-link to="/projects">Projects</router-link>
+        </li>
+        <li>
+          <router-link to="/careers">Careers</router-link>
+        </li>
+        <li>
+          <router-link to="/consulting">Consulting</router-link>
+        </li>
       </ul>
     </div>
 
