@@ -5,5 +5,5 @@
 </template>
 
 <style>
-@import '~/assets/main.css';
+@import '~/assets/css/main.css';
 </style>
