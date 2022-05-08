@@ -12,6 +12,7 @@ declare module 'vue' {
     Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']
+    Technology: typeof import('./src/components/Technology.vue')['default']
     ToolingIcon: typeof import('./src/components/icons/ToolingIcon.vue')['default']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
