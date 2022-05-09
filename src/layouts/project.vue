@@ -1,6 +1,6 @@
 <template layout="default">
   <div :style="`background-color: ${$frontmatter.background_color}`">
-    <div class="container py-12 text-white grid grid-cols-2">
+    <div class="container py-12 grid grid-cols-2" :class="textColor">
       <div>
         <router-link to="/projects" class="block mb-2">&leftarrow; &nbsp; Projects</router-link>
 
@@ -45,3 +45,13 @@
   </div>
   <slot />
 </template>
+
+<script>
+export default {
+  computed: {
+    textColor() {
+      return this.$frontmatter.text_color_theme === 'dark' ? 'text-gray-900' : 'text-white'
+    }
+  }
+}
+</script>
