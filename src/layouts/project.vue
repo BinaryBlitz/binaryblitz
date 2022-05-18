@@ -22,12 +22,12 @@
         </div>
       </div>
 
-      <div class="flex items-center justify-center">
+      <div class="hidden md:flex items-center justify-center">
         <img :src="$frontmatter.screenshot_src" alt="FITMOST on iPhone" style="max-height: 30rem;">
       </div>
     </div>
   </div>
-  <div class="container py-16 grid grid-cols-2 gap-x-16">
+  <div class="container py-16 grid gap-y-12 lg:grid-cols-2 gap-x-16">
     <div class="flex flex-col gap-y-10">
       <h2 class="text-2xl font-semibold">About</h2>
 
