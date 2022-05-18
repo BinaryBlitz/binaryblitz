@@ -12,7 +12,6 @@
     </div>
 
     <div class="flex items-center gap-x-8">
-      <a href="#" class="text-sm font-medium">EN</a>
       <a href="#" class="button">Contact</a>
     </div>
   </div>
