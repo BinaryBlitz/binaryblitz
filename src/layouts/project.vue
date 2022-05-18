@@ -2,7 +2,7 @@
   <div :style="`background-color: ${$frontmatter.background_color}`">
     <div class="container py-12 grid grid-cols-2" :class="textColor">
       <div>
-        <router-link to="/projects" class="block mb-2">&leftarrow; &nbsp; Projects</router-link>
+        <router-link to="/" class="block mb-2">&leftarrow; &nbsp; Projects</router-link>
 
         <div class="mb-12 font-medium">{{ $frontmatter.category }}</div>
 
