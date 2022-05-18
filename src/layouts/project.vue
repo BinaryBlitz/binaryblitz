@@ -31,7 +31,7 @@
     <div class="flex flex-col gap-y-10">
       <h2 class="text-2xl font-semibold">About</h2>
 
-      <p>{{ $frontmatter.about }}</p>
+      <div v-html="$frontmatter.about" class="flex flex-col gap-y-4"></div>
     </div>
     <div class="flex items-center justify-center gap-x-8">
       <img :src="screenshot" alt="FITMOST screenshot iPhone" class="shadow-lg rounded"
