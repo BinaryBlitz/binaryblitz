@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/projects/${project.slug}`"
-    class="bg-cover p-12 flex flex-col justify-between items-start gap-y-20"
+    class="bg-cover p-10 lg:p-12 flex flex-col justify-between items-start gap-y-12 lg:gap-y-20"
     :style="`background-image: url(${project.background_url})`">
     <img alt="" :src="project.icon_src" class="h-12">
 
