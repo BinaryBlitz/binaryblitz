@@ -12,7 +12,7 @@
     </div>
 
     <div class="flex items-center gap-x-8">
-      <a href="#" class="button">Contact</a>
+      <a href="mailto:app@binaryblitz.ru" class="button">Contact</a>
     </div>
   </div>
 </template>
