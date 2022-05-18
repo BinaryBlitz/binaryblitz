@@ -11,9 +11,6 @@
         <li>
           <router-link to="/careers">Careers</router-link>
         </li>
-        <li>
-          <router-link to="/consulting">Consulting</router-link>
-        </li>
       </ul>
     </div>
 
