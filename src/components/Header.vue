@@ -8,9 +8,6 @@
         <li>
           <router-link to="/projects">Projects</router-link>
         </li>
-        <li>
-          <router-link to="/careers">Careers</router-link>
-        </li>
       </ul>
     </div>
 
