@@ -1,6 +1,6 @@
 <template layout="default">
   <div :style="`background-color: ${$frontmatter.background_color}`">
-    <div class="container py-12 grid grid-cols-2" :class="textColor">
+    <div class="container py-12 grid md:grid-cols-2" :class="textColor">
       <div>
         <router-link to="/" class="block mb-2">&leftarrow; &nbsp; Projects</router-link>
 
