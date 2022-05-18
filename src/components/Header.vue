@@ -6,7 +6,7 @@
       </router-link>
       <ul class="flex gap-8 font-medium">
         <li>
-          <router-link to="/projects">Projects</router-link>
+          <router-link to="/">Projects</router-link>
         </li>
       </ul>
     </div>
