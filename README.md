@@ -1,5 +1,7 @@
 # binaryblitz
 
+![Screenshot](./screenshot.png)
+
 ## Project Setup
 
 ```sh
