@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+body {
+  @apply text-gray-900 antialiased;
+}
+
+.button {
+  @apply inline-block align-middle px-4 py-2 bg-transparent border border-gray-900 rounded-full uppercase text-xs font-medium tracking-tight;
+}
+
+.button:hover {
+  @apply bg-gray-900 text-white;
+}

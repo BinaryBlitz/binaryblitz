@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import Layout from '../../layouts/Layout.astro';
 import Technology from '../../components/Technology.astro';
 import appStore from '../../assets/images/app-store.png';
 import googlePlay from '../../assets/images/google-play.png';
@@ -16,9 +16,9 @@ const { Content } = await render(project);
 const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-white';
 ---
 
-<BaseLayout title={data.title} description={data.description}>
+<Layout title={data.title} description={data.description}>
   <div style={{ backgroundColor: data.background_color }}>
-    <div class:list={['container py-12 grid md:grid-cols-2', textColor]}>
+    <div class:list={['container mx-auto px-6 py-12 grid md:grid-cols-2', textColor]}>
       <div>
         <a href="/" class="block mb-2">&leftarrow; &nbsp; Projects</a>
         <div class="mb-12 font-medium">{data.category}</div>
@@ -43,7 +43,7 @@ const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-whi
       </div>
     </div>
   </div>
-  <div class="container py-16 grid gap-y-12 lg:grid-cols-2 gap-x-16">
+  <div class="container mx-auto px-6 py-16 grid gap-y-12 lg:grid-cols-2 gap-x-16">
     <div class="flex flex-col gap-y-10">
       <h2 class="text-2xl font-semibold">About</h2>
       <div class="flex flex-col gap-y-4"><Content /></div>
@@ -56,9 +56,9 @@ const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-whi
   </div>
   {data.technologies?.length > 0 && (
     <div class="bg-gray-50">
-      <div class="container py-16 grid md:grid-cols-3 gap-10">
+      <div class="container mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
         {data.technologies.map(name => <Technology name={name} />)}
       </div>
     </div>
   )}
-</BaseLayout>
+</Layout>
