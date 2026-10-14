@@ -5,8 +5,14 @@ body {
   @apply text-gray-900 antialiased;
 }
 
+@layer base {
+  a:focus-visible {
+    @apply outline-2 outline-offset-4;
+  }
+}
+
 .button {
-  @apply inline-block align-middle px-4 py-2 bg-transparent border border-gray-900 rounded-full uppercase text-xs font-medium tracking-tight;
+  @apply inline-block align-middle px-4 py-2 bg-transparent border border-gray-900 rounded-full uppercase text-xs font-medium tracking-tight whitespace-nowrap motion-safe:transition-colors focus-visible:outline-gray-900;
 }
 
 .button:hover {

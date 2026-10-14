@@ -5,11 +5,11 @@ const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-whi
 ---
 
 <a href={`/projects/${id}`}
-  class="bg-cover p-10 lg:p-10 xl:p-12 flex flex-col justify-between items-start gap-y-12 md:gap-y-8 lg:gap-y-14 xl:gap-y-20"
+  class:list={['group bg-cover p-10 xl:p-12 flex flex-col justify-between items-start gap-y-12 md:gap-y-8 lg:gap-y-14 xl:gap-y-20 focus-visible:-outline-offset-4', textColor]}
   style={{ backgroundImage: `url(${data.background_url})` }}>
   <img alt="" src={data.icon_src} class="h-12" />
-  <div class:list={['font-medium', textColor]}>
+  <div class="space-y-1 font-medium">
     <p class="text-sm">{data.category}</p>
-    <p class="text-lg font-semibold">{data.headline}</p>
+    <p class="text-lg leading-6 font-semibold underline-offset-4 group-hover:underline">{data.headline}</p>
   </div>
 </a>

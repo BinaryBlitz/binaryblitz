@@ -20,20 +20,23 @@ const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-whi
   <div style={{ backgroundColor: data.background_color }}>
     <div class:list={['container mx-auto px-6 py-12 grid md:grid-cols-2', textColor]}>
       <div>
-        <a href="/" class="block mb-2">&leftarrow; &nbsp; Projects</a>
+        <a href="/" class="inline-flex items-center gap-2 mb-2 underline-offset-4 hover:underline">
+          <span aria-hidden="true">&leftarrow;</span>
+          Projects
+        </a>
         <div class="mb-12 font-medium">{data.category}</div>
         <img alt={`${data.name} logo`} src={data.logo_src} class="block h-16 mb-12" />
         <h1 class="mb-8 text-2xl font-semibold">{data.headline}</h1>
-        <p class="text-lg mb-8">{data.summary}</p>
+        <p class="text-lg leading-relaxed mb-8">{data.summary}</p>
         <div class="flex items-center gap-x-2">
           {data.app_store_url && (
-            <a href={data.app_store_url} target="_blank" rel="noopener noreferrer">
-              <img alt="App Store" src={appStore.src} width={appStore.width} height={appStore.height} />
+            <a href={data.app_store_url} target="_blank" rel="noopener noreferrer" class="block rounded-sm">
+              <img alt="App Store" src={appStore.src} class="h-10 w-auto" width={appStore.width} height={appStore.height} />
             </a>
           )}
           {data.google_play_url && (
-            <a href={data.google_play_url} target="_blank" rel="noopener noreferrer">
-              <img alt="Google Play" src={googlePlay.src} width={googlePlay.width} height={googlePlay.height} />
+            <a href={data.google_play_url} target="_blank" rel="noopener noreferrer" class="block rounded-sm">
+              <img alt="Google Play" src={googlePlay.src} class="h-10 w-auto" width={googlePlay.width} height={googlePlay.height} />
             </a>
           )}
         </div>
@@ -46,11 +49,11 @@ const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-whi
   <div class="container mx-auto px-6 py-16 grid gap-y-12 lg:grid-cols-2 gap-x-16">
     <div class="flex flex-col gap-y-10">
       <h2 class="text-2xl font-semibold">About</h2>
-      <div class="flex flex-col gap-y-4"><Content /></div>
+      <div class="flex flex-col gap-y-4 leading-relaxed"><Content /></div>
     </div>
     <div class="flex items-center justify-center gap-x-8">
       {data.screenshots.map(screenshot => (
-        <img src={screenshot} alt={`${data.name} screenshot`} class="shadow-lg rounded-sm" />
+        <img src={screenshot} alt={`${data.name} screenshot`} class="min-w-0 shadow-lg rounded-sm" />
       ))}
     </div>
   </div>

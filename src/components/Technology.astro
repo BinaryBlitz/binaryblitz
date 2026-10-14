@@ -21,6 +21,8 @@ const technology = technologies[Astro.props.name];
 
 <div class="flex flex-col gap-y-8 items-start">
   <img src={technology.logo} alt={technology.name} class="max-h-20" />
-  <h3 class="text-lg font-semibold">{technology.name}</h3>
-  <p>{technology.description}</p>
+  <div class="space-y-3">
+    <h3 class="text-lg font-semibold">{technology.name}</h3>
+    <p class="text-gray-600 leading-relaxed">{technology.description}</p>
+  </div>
 </div>
