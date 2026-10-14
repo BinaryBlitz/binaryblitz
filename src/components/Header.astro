@@ -1,0 +1,19 @@
+---
+import logo from '../assets/images/logo.png';
+---
+
+<header class="container py-8 flex justify-between items-center gap-x-8">
+  <div class="flex flex-row items-center gap-x-8 md:gap-x-12">
+    <a href="/">
+      <img src={logo.src} alt="Binary Blitz logo" width={logo.width} height={logo.height} />
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="flex gap-8 font-medium">
+        <li><a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="flex items-center gap-x-8">
+    <a href="mailto:app@binaryblitz.ru" class="button">Contact</a>
+  </div>
+</header>

@@ -1,0 +1,24 @@
+---
+title: GetHelp
+background_color: '#f26b11'
+name: GetHelp
+category: Mobile app
+headline: Study assistant
+icon_src: /images/projects/gethelp/icon.png
+logo_src: /images/projects/gethelp/logo.png
+background_url: /images/projects/gethelp/background.jpg
+summary: GetHelp — students handworks drafting service. Qualified experts for past few years help students to solve problems during their studies.
+app_store_url: 'https://itunes.apple.com/us/app/gethelp-помощник-в-учебе/id1073331646?ls=1&mt=8'
+google_play_url: 'https://play.google.com/store/apps/details?id=binaryblitz.gethelpapp'
+screenshot_src: /images/projects/gethelp/iphone.png
+description: No need to waste time on trips to the dry cleaning. Save time and money on dry-cleaning and laundry with Chisto.
+screenshots:
+  - /images/projects/gethelp/screen-01.png
+  - /images/projects/gethelp/screen-02.png
+technologies:
+  - rails
+---
+
+<p>GetHelp assists students with their home assignments, tests, and exams. At the moment of publication, GetHelp is the only app of such type in the App Store.</p>
+
+<p>Users can communicate with their assistants via built-in chat, where they can send photos of their assignments to get assistance. After matching all the details, the user can pay their order inside the app.</p>

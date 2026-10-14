@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Technology from '../../components/Technology.astro';
+import appStore from '../../assets/images/app-store.png';
+import googlePlay from '../../assets/images/google-play.png';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map(project => ({ params: { slug: project.id }, props: { project } }));
+}
+
+const { project } = Astro.props;
+const { data } = project;
+const { Content } = await render(project);
+const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-white';
+---
+
+<BaseLayout title={data.title} description={data.description}>
+  <div style={{ backgroundColor: data.background_color }}>
+    <div class:list={['container py-12 grid md:grid-cols-2', textColor]}>
+      <div>
+        <a href="/" class="block mb-2">&leftarrow; &nbsp; Projects</a>
+        <div class="mb-12 font-medium">{data.category}</div>
+        <img alt={`${data.name} logo`} src={data.logo_src} class="block h-16 mb-12" />
+        <h1 class="mb-8 text-2xl font-semibold">{data.headline}</h1>
+        <p class="text-lg mb-8">{data.summary}</p>
+        <div class="flex items-center gap-x-2">
+          {data.app_store_url && (
+            <a href={data.app_store_url} target="_blank" rel="noopener noreferrer">
+              <img alt="App Store" src={appStore.src} width={appStore.width} height={appStore.height} />
+            </a>
+          )}
+          {data.google_play_url && (
+            <a href={data.google_play_url} target="_blank" rel="noopener noreferrer">
+              <img alt="Google Play" src={googlePlay.src} width={googlePlay.width} height={googlePlay.height} />
+            </a>
+          )}
+        </div>
+      </div>
+      <div class="hidden md:flex items-center justify-center">
+        <img src={data.screenshot_src} alt={`${data.name} preview`} style="max-height: 30rem;" />
+      </div>
+    </div>
+  </div>
+  <div class="container py-16 grid gap-y-12 lg:grid-cols-2 gap-x-16">
+    <div class="flex flex-col gap-y-10">
+      <h2 class="text-2xl font-semibold">About</h2>
+      <div class="flex flex-col gap-y-4"><Content /></div>
+    </div>
+    <div class="flex items-center justify-center gap-x-8">
+      {data.screenshots.map(screenshot => (
+        <img src={screenshot} alt={`${data.name} screenshot`} class="shadow-lg rounded-sm" />
+      ))}
+    </div>
+  </div>
+  {data.technologies?.length > 0 && (
+    <div class="bg-gray-50">
+      <div class="container py-16 grid md:grid-cols-3 gap-10">
+        {data.technologies.map(name => <Technology name={name} />)}
+      </div>
+    </div>
+  )}
+</BaseLayout>

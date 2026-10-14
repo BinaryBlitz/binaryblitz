@@ -1,0 +1,26 @@
+---
+const technologies = {
+  swift: {
+    name: 'Swift',
+    logo: '/images/technologies/swift.png',
+    description: 'General-purpose programming language built using a modern approach to safety, performance, and software design patterns.',
+  },
+  kotlin: {
+    name: 'Kotlin',
+    logo: '/images/technologies/kotlin.png',
+    description: 'Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and Android.',
+  },
+  rails: {
+    name: 'Ruby on Rails',
+    logo: '/images/technologies/rails.png',
+    description: 'Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.',
+  },
+};
+const technology = technologies[Astro.props.name];
+---
+
+<div class="flex flex-col gap-y-8 items-start">
+  <img src={technology.logo} alt={technology.name} class="max-h-20" />
+  <h3 class="text-lg font-semibold">{technology.name}</h3>
+  <p>{technology.description}</p>
+</div>

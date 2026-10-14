@@ -1,0 +1,15 @@
+---
+const { project } = Astro.props;
+const { data, id } = project;
+const textColor = data.text_color_theme === 'dark' ? 'text-gray-900' : 'text-white';
+---
+
+<a href={`/projects/${id}`}
+  class="bg-cover p-10 lg:p-10 xl:p-12 flex flex-col justify-between items-start gap-y-12 md:gap-y-8 lg:gap-y-14 xl:gap-y-20"
+  style={{ backgroundImage: `url(${data.background_url})` }}>
+  <img alt="" src={data.icon_src} class="h-12" />
+  <div class:list={['font-medium', textColor]}>
+    <p class="text-sm">{data.category}</p>
+    <p class="text-lg font-semibold">{data.headline}</p>
+  </div>
+</a>

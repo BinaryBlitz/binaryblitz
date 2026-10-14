@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<BaseLayout title="Software design and development">
+  <div class="bg-gray-50">
+    <div class="container py-12 grid grid-cols-1 md:grid-cols-2">
+      {projects.map(project => <ProjectCard project={project} />)}
+    </div>
+  </div>
+</BaseLayout>
